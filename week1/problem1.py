@@ -1,5 +1,4 @@
 # Question 1: What is the version of numpy installed?
-import sys
 import numpy as np
 
 def solution():
