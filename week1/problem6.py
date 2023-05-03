@@ -1,7 +1,6 @@
 # Question 6:
 import pandas as pd
 
-<<<<<<< HEAD
 def solutionA(df):
     """Part 1: Find the median value of 'Engine Cylinders' column in the dataset."""
     return df['Engine Cylinders'].median()
