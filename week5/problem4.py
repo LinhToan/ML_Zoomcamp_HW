@@ -12,15 +12,20 @@ def load(filename: str):
 dv = load('./dv.bin')
 model = load('./model1.bin')
 
+def predict(dv, model, client):
+    X = dv.transform([client])
+    y_pred = round(model.predict_proba(X)[0, 1], 3)
+
+    return y_pred
+
 app = Flask('problem4')
 
 @app.route('/problem4', methods=['POST'])
 def solution():
     client = request.get_json()
-
-    X = dv.transform([client])
-    y_pred = round(model.predict_proba(X)[0, 1], 3)
  
+    y_pred = predict(dv, model, client)
+
     result = {
         'credit_approval_probability': float(y_pred)
     }
