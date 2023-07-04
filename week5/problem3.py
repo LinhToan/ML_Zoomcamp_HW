@@ -18,8 +18,8 @@ def solution(model_file, dv_file, client):
     dv = load(dv_file)
 
     X = dv.transform([client])
-
-    return round(model.predict_proba(X)[0,1], 3)
+    y_pred = round(model.predict_proba(X)[0,1], 3)
+    return y_pred
 
 # client = {"reports": 0, "share": 0.001694, "expenditure": 0.12, "owner": "yes"}
 # model_file = 'model1.bin'
