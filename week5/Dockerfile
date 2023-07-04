@@ -1,3 +1,4 @@
+# docker pull svizor/zoomcamp-model:3.9.12-slim
 FROM svizor/zoomcamp-model:3.9.12-slim
 
 RUN pip install pipenv
