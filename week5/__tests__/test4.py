@@ -1,5 +1,4 @@
-# To run this test, use `pipenv shell` and 
-# then `gunicorn --bind 0.0.0.0:9696 problem4:app`, then finally run test4.py
+# Must run this test in `pipenv shell`
 import requests
 
 url = "http://localhost:9696/problem4"
