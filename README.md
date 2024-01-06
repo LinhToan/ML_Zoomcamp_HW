@@ -6,7 +6,6 @@ My homework solutions for DataTalksClub's Machine Learning Zoomcamp. Initially I
 4. Evaluation
 5. Deployment
 6. Trees
-7. Production
 8. Deep Learning
 9. Serverless
 10. Kubernetes
